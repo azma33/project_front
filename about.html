@@ -31,21 +31,14 @@
             font-weight: bold;
         }
         .left-side {
-            width: 50%;
+            width: 100%;
             background-color: #f4f4f4;
             color: #333;
             box-sizing: border-box;
             padding: 20px;
             margin-right: 10px; /* Add margin to the right of the left block */
         }
-        .right-side {
-            width: 50%;
-            padding: 20px;
-            background-color: #e8e8e8;
-            color: #333;
-            box-sizing: border-box;
-            margin-left: 10px; /* Add margin to the left of the right block */
-        }
+    
         .image-name-container {
             background: linear-gradient(to bottom right, #b0b0b0, #d0d0d0);
             padding: 20px;
@@ -283,66 +276,59 @@
                     <li>Core Java</li>
                     <li>Core Python</li>
                     <li>Version Control/Git</li>
-                    <li>OS</li>
+                    <li>R</li>
                 </ul>
               </div>
           </div>
-      </div>
-      <div class="right-side">
           <div class="section">
-              <div class="section-title">Career Objective</div>
-              <p>Secure a responsible career to fully utilize my training skills to develop the entire organization that will enrich and nurture my skills, which helps me in developing my goals and supporting the organization.</p>
-          </div>
-          <div class="section">
-              <div class="section-title">Projects</div>
-              <p>Project 1: Description</p>
-              <p>Project 2: Description</p>
-          </div>
-          <div class="section">
-              <div class="section-title">Certifications and Training</div>
-              <div class="carousel">
-                  <img src="./static/img/Screenshot 2024-06-30 193514.png" style="border-radius: 0%;" alt="Certification 1" class="active">
-               
-                  <div class="text">Certification 1 Description</div>
-                  <div class="carousel-buttons">
-                      <button onclick="prevImage()">&#10094;</button>
-                      <button onclick="nextImage()">&#10095;</button>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </fieldset>
-  <script>
-      let currentIndex = 0;
-      const images = document.querySelectorAll('.carousel img');
-      const texts = [
-          'This certifies that Syed Mohammad Azmatullah has successfully completed the Ai in practice:Applying Ai course on June 14, 2024, through edX.',
-      ];
-      const textElement = document.querySelector('.carousel .text');
-
-      function showImage(index) {
-          images.forEach((img, i) => {
-              img.classList.remove('active');
-              if (i === index) {
-                  img.classList.add('active');
-                  textElement.textContent = texts[i];
-              }
-          });
-      }
-
-      function nextImage() {
-          currentIndex = (currentIndex + 1) % images.length;
-          showImage(currentIndex);
-      }
-
-      function prevImage() {
-          currentIndex = (currentIndex - 1 + images.length) % images.length;
-          showImage(currentIndex);
-      }
-
-      setInterval(nextImage, 3000); // Change image every 3 seconds
-  </script>
+            <div class="section-title">Career Objective</div>
+            <p>Secure a responsible career to fully utilize my training skills to develop the entire organization that will enrich and nurture my skills, which helps me in developing my goals and supporting the organization.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Projects</div>
+            <p>Project 1: Description</p>
+            <p>Project 2: Description</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Certifications and Training</div>
+            <div class="carousel">
+                <img src="./static/img/Screenshot 2024-06-30 193514.png" style="border-radius: 0%;" alt="Certification 1" class="active">
+            </div>
+        </div>
     </div>
+</fieldset>
+<script>
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.carousel img');
+    const texts = [
+        'This certifies that Syed Mohammad Azmatullah has successfully completed the Ai in practice:Applying Ai course on June 14, 2024, through edX.',
+    ];
+    const textElement = document.querySelector('.carousel .text');
+
+    function showImage(index) {
+        images.forEach((img, i) => {
+            img.classList.remove('active');
+            if (i === index) {
+                img.classList.add('active');
+                textElement.textContent = texts[i];
+            }
+        });
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    }
+
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+    }
+
+    setInterval(nextImage, 3000); // Change image every 3 seconds
+</script>
+  </div>
+      </div>
     <div class="footer">
       <div class="social-icons">
           <a href="https://www.linkedin.com/in/aaruhi-ai-bot-361889315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="./static/img/linkedin_3536569.png" height="20" width="20"></a>
